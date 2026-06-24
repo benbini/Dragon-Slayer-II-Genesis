@@ -1,1 +1,1 @@
-placeholder
+Dragon Slayer II Patch Resources
