@@ -12,7 +12,7 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-from utils.dbg import dbg # bjs
+from utils import dbg 
 
 ROM_FILE_TABLE = 0x19DF08
 SUBFILE_TABLE = 0x19DC3C
@@ -586,8 +586,8 @@ class ScriptDumper:
             jump = f"<${target >> 24 & 0xFF:02X}><${target >> 16 & 0xFF:02X}><${target >> 8 & 0xFF:02X}><${target & 0xFF:02X}>"
             fill = f"#FILL(${self.write_start:X}, ${end:X}, $00)"
         else:
-            if self.debug_mode:            # bjs
-                dbg(f"{self.write_start:X} {end:X}",exit_at_ptr)  # bjs
+            if self.debug_mode:            
+                dbg(f"{self.write_start:X} {end:X}",exit_at_ptr)  
             if exit_at_ptr:
                 end -= 1
             jump = f"<$FF><$FF><${target >> 8 & 0xFF:02X}><${target & 0xFF:02X}>"
@@ -639,10 +639,10 @@ def dump_file(args) -> None:
             print(f"[DECODE] {binary_path} ({consumed:#x} compressed bytes)", file=sys.stderr)
         text_path = args.text_dir / f"script_{scene:02X}.txt"
         debug_mode = False
-        #if "script_35.txt" in str(text_path):   # bjs
-        #    debug_mode = True                   # bjs
-        #else:                                   # bjs
-        #    debug_mode = False                  # bjs 
+        #if "script_35.txt" in str(text_path):   
+        #    debug_mode = True                   
+        #else:                                   
+        #    debug_mode = False                  
 
         with text_path.open("wb") as fp:
             binary_path_str = str(args.binary_dir)+"//"+str(base_name)   # duplicate the formatting found in dumper.cpp line 124
