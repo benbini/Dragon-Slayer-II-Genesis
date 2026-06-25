@@ -8,7 +8,7 @@
 
    I must emphasize that I am directly responsible for very little of the code in this repository.  My contribution consists almost entirely of using ChatGPT 5.5-medium thinking to port the C++ source found in the Romhacking-hosted toolset to equivalent Python, and correcting a mercifully-few number of bugs that were introduced during that process.  The extremely simple bash scripts and two Python scripts, `dump_lines.py` and `insert_asm.py`, are my own work.  Obviously a huge thank-you to whoever put these tools together in 2007.  Without their work it would be impossible to even be thinking about resuming efforts to patch this game now.
 
-   The original Romhacking toolset uses a very old version, marked 1.06, of the [Atlas](https://github.com/stevemonaco/Atlas) text insertion framework, led by Steve Monaco and Gideon Zhi.  According to Steve Monaco this 1.06 code has undergone some revision by the authors of the ported toolset.  I would like to thank Steve Monaco for allowing me to host a Python port of a (very ancient version) of his code.
+   The original Romhacking toolset uses a very old version, marked 1.06, of the [Atlas](https://github.com/stevemonaco/Atlas) text insertion framework, led by Steve Monaco and Gideon Zhi.  According to Steve Monaco this 1.06 code has undergone some revision by the authors of the ported toolset.  I would like to thank Steve Monaco for allowing me to host a Python port of a very ancient version of his code.
 
    The original toolset also uses a fork of Byuu's XKAS assembler apparently targeting the Gameboy Color; I was unable to find source for that specific assembler but fortunately the assembler was used for extremely simple insertion of assembly into the ROM that I simply re-coded in `insert_asm.py`.  
    
