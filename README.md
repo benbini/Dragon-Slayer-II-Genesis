@@ -2,7 +2,7 @@
 
 ## Motivation
 
-   This is a port of a set of [tools](https://www.romhacking.net/abandoned/%5B42%5Ddragon_slayer_2.rar) listed on the "Abandoned" Section of Romhacking.net for patching the Genesis version of Legend of Heroes II (Dragon Slayer - Eiyuu Densetsu II) into English and other languages.  I've long wanted to play thegame in English and have modernized the tools, using AI to port C++ code to Python and batch scripts to bash, in the hopes that doing so will enable interested people, particularly those who prefer to work in Linux/MacOS environments as opposed to Windows, to finish the work that the anonymous coder(s) responsible for the abandoned tools started. 
+   This is a port of a set of [tools](https://www.romhacking.net/abandoned/%5B42%5Ddragon_slayer_2.rar) listed on the "Abandoned" Section of Romhacking.net for patching the Genesis version of Legend of Heroes II (Dragon Slayer - Eiyuu Densetsu II) into English and other languages.  I've long wanted to play the game in English and have modernized the tools, using AI to port C++ code to Python and batch scripts to bash, in the hopes that doing so will enable interested people, particularly those who prefer to work in Linux/MacOS environments as opposed to Windows, to finish the work that the anonymous coder(s) responsible for the abandoned tools started. 
 
 ## Credits
 
